@@ -18,6 +18,6 @@ _______________________________________________________________
 3. https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=1140%3A291&t=W6kx7UAxSeqvERUa-0
 
 
-Мой проект в gh-page - https://dkey477.github.io/mesto/
+Мой проект в gh-page - https://dkey477.github.io/mesto-react/
 ________________________________________________________________
 ### Код проектной работы написан в Visual Studio Code. Использовались языки HTML,CSS,JS и React. Рекомендуется просматривать работу в *Chrome browser, Yandex browser, Firefox*
