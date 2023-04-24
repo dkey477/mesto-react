@@ -15,12 +15,9 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardclick }) {
         setUserDescription(user.about);
         setUserAvatar(user.avatar);
         serCards(card);
-        // userCurrentId = user._id
-        // userInfo.setUserInfo(user);
-        // cards.renderItems(card, userCurrentId)
       })
       .catch((err) => console.log(err));
-  });
+  }, []);
 
   return (
     <>
