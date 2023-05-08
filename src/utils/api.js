@@ -34,13 +34,13 @@ export class Api {
   }
 
   // Передача данных пользователя на сервер
-  setUserInfo({name, job}) {
+  setUserInfo(data) {
     return fetch(`${this._baseUrl}/users/me`, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        name: name,
-        about: job
+        name: data.name,
+        about: data.about
       })
     })
       .then(res => {
@@ -49,12 +49,12 @@ export class Api {
   }
 
   // передача новой аватарки на сервер
-  setAvatar({ link }) {
+  setAvatar(data) {
     return fetch(`${this._baseUrl}/users/me/avatar`, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        avatar: link
+        avatar: data.avatar
       })
     })
       .then(res => {
@@ -64,13 +64,13 @@ export class Api {
 
 
   // Добавление карточки
-  addCard({name, link}) {
+  addCard(data) {
     return fetch(`${this._baseUrl}/cards`, {
       method: 'POST',
       headers: this._headers,
     body: JSON.stringify({
-      name: name,
-      link: link
+      name: data.name,
+      link: data.link
     })
     })
       .then(res => {
