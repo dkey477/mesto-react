@@ -22,7 +22,6 @@ function PopupWithForm({
           className="popup__content"
           name="popup"
           method="post"
-          noValidate=""
           onSubmit={onSubmit}
         >
           <h2 className="popup__title">{title}</h2>

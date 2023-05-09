@@ -6,9 +6,8 @@ import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
 export default function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
 
-    const [name, setName] = useState({});
-
-    const [description, setDescription]= useState({});
+    const [name, setName] = useState('');
+    const [description, setDescription]= useState('');
 
     function handleNameChange(evt) {
         setName(evt.target.value)
