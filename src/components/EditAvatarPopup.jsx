@@ -15,8 +15,8 @@ export default function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar }) {
   }
 
   useEffect(() => {
-    isOpen && (avatarRef.current.value = '') 
-  }, [isOpen])
+    isOpen && (avatarRef.current.value = "");
+  }, [isOpen]);
 
   return (
     <PopupWithForm
